@@ -7,7 +7,7 @@ from .models import Greeting
 # Create your views here.
 def index(request):
 	athens = {'start_latitude':'33.957423','start_longitude':'-83.376847','end_latitude':'33.957423','end_longitude':'-83.376847'}
-	manhattanbeach = {'start_latitude':'33.881728','start_longitude':'-118.404121','end_latitude':'34.019479','end_longitude':'-118.401718'}
+	sanantoniopearl = {'start_latitude':'29.442322','start_longitude':'-98.479279','end_latitude':'29.442322','end_longitude':'-98.479279'}
 	westhollywood = {'start_latitude':'34.085036','start_longitude':'-118.359318','end_latitude':'34.019479','end_longitude':'-118.401718'}
 	koreatown = {'start_latitude':'34.069112','start_longitude':'-118.281384','end_latitude':'34.019479','end_longitude':'-118.401718'}
 	midwilshire = {'start_latitude':'34.057166','start_longitude':'-118.323956','end_latitude':'34.019479','end_longitude':'-118.401718'}
@@ -17,7 +17,7 @@ def index(request):
 
 	cities = []
 	cities.append(athens)
-	cities.append(manhattanbeach)
+	cities.append(sanantoniopearl)
 	cities.append(westhollywood)
 	cities.append(koreatown)
 	cities.append(midwilshire)
@@ -25,7 +25,7 @@ def index(request):
 	cities.append(glendale)
 	cities.append(northhollywood)
 	info = ''
-	names = ["Athens","Manhattan Beach","West Hollywood","Koreatown","Midwilshire","Downtown","Glendale","North Hollywood"]
+	names = ["Athens","San Antonio Pearl","West Hollywood","Koreatown","Midwilshire","Downtown","Glendale","North Hollywood"]
 
 	for i in cities:
 		payload = cities[cities.index(i)]
