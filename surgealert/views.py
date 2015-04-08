@@ -6,9 +6,9 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-	athens = {'start_latitude':'33.957423','start_longitude':'-83.376847','end_latitude':'33.957423','end_longitude':'-83.376847'}
-	sanantoniopearl = {'start_latitude':'29.442322','start_longitude':'-98.479279','end_latitude':'29.442322','end_longitude':'-98.479279' }
-	atlantabuckhead = {'start_latitude':'33.840954','start_longitude':'-84.379155','end_latitude':'33.840954','end_longitude':'-84.379155'}
+	athens = {'start_latitude':'33.957423','start_longitude':'-83.376847','end_latitude':'33.957424','end_longitude':'-83.376848'}
+	sanantoniopearl = {'start_latitude':'29.442322','start_longitude':'-98.479279','end_latitude':'29.442323','end_longitude':'-98.479278' }
+	atlantabuckhead = {'start_latitude':'33.840954','start_longitude':'-84.379155','end_latitude':'33.840955','end_longitude':'-84.379156'}
 	koreatown = {'start_latitude':'34.069112','start_longitude':'-118.281384','end_latitude':'34.019479','end_longitude':'-118.401718'}
 	midwilshire = {'start_latitude':'34.057166','start_longitude':'-118.323956','end_latitude':'34.019479','end_longitude':'-118.401718'}
 	downtown = {'start_latitude':'34.042943','start_longitude':'-118.260098','end_latitude':'34.019479','end_longitude':'-118.401718'}
