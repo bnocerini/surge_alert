@@ -7,11 +7,14 @@ from .models import Greeting
 # Create your views here.
 def index(request):
 	athens = {'start_latitude':'33.957423','start_longitude':'-83.376847','end_latitude':'33.957423','end_longitude':'-83.376847'}
+	atlantabuckhead = {'start_latitude':'33.840954','start_longitude':'-84.379155','end_latitude':'33.840954','end_longitude':'-84.379155'}
+
 	
 	cities = []
 	cities.append(athens)
+	cities.append(atlantabuckhead)
 	info = ''
-	names = ["Athens"]
+	names = ["Athens","Atlanta Buckhead"]
 
 	for i in cities:
 		payload = cities[cities.index(i)]
