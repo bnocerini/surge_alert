@@ -20,7 +20,7 @@ def index(request):
 		data = json.loads(r.text)
 		info = info + (names[cities.index(i)]) + '    '
 		info = info + (data['prices'][0]['display_name']) + '    '
-		info = info + str((data['prices'][0]['surge_multiplier']))at + '  '	
+		info = info + str((data['prices'][0]['surge_multiplier']))at + '    '	
 	return HttpResponse(info)
 
 
