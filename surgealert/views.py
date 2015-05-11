@@ -6,16 +6,16 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-	alpharetta = {'start_latitude':'34.023493','start_longitude':'-84.234206','end_latitude':'34.023493','end_longitude':'-84.234206'}
-	buckhead = {'start_latitude':'33.840954','start_longitude':'-84.379155','end_latitude':'33.840954','end_longitude':'-84.379155'}
-	midtown = {'start_latitude':'33.783086','start_longitude':'-84.382319','end_latitude':'33.783086','end_longitude':'-84.382319'}
+	downtown = {'start_latitude':'25.771100','start_longitude':'-80.192316','end_latitude':'25.771100','end_longitude':'-80.192316'}
+	southbeach = {'start_latitude':'25.774694','start_longitude':'-80.133050','end_latitude':'25.774694','end_longitude':'-80.133050'}
+	airport = {'start_latitude':'25.795029','start_longitude':'-80.278527','end_latitude':'25.795029','end_longitude':'-80.278527'}
 	
 	cities = []
-	cities.append(alpharetta)
-	cities.append(buckhead)
-	cities.append(midtown)
+	cities.append(downtown)
+	cities.append(southbeach)
+	cities.append(airport)
 	info = ''
-	names = ["Alpharetta","Buckhead","Midtown"]
+	names = ["Downtown","South Beach","Airport"]
 
 	for i in cities:
 		payload = cities[cities.index(i)]
