@@ -8,14 +8,14 @@ from .models import Greeting
 def index(request):
 	alpharetta = {'start_latitude':'34.023493','start_longitude':'-84.234206','end_latitude':'34.023493','end_longitude':'-84.234206'}
 	buckhead = {'start_latitude':'33.840954','start_longitude':'-84.379155','end_latitude':'33.840954','end_longitude':'-84.379155'}
-	midtown = {'start_latitude':'33.783086','start_longitude':'-84.382319','end_latitude':'33.783086','end_longitude':'-84.382319'}
+	dunwoody = {'start_latitude':'33.925628','start_longitude':'-84.342856','end_latitude':'33.925628','end_longitude':'-84.342856'}
 	
 	cities = []
 	cities.append(alpharetta)
+	cities.append(dunwoody)
 	cities.append(buckhead)
-	cities.append(midtown)
 	info = ''
-	names = ["Alpharetta","Buckhead","Midtown"]
+	names = ["Alpharetta","Dunwoody","Buckhead"]
 
 	for i in cities:
 		payload = cities[cities.index(i)]
