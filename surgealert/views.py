@@ -6,16 +6,12 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-	alpharetta = {'start_latitude':'34.023493','start_longitude':'-84.234206','end_latitude':'34.023493','end_longitude':'-84.234206'}
-	buckhead = {'start_latitude':'33.840954','start_longitude':'-84.379155','end_latitude':'33.840954','end_longitude':'-84.379155'}
 	dunwoody = {'start_latitude':'33.925628','start_longitude':'-84.342856','end_latitude':'33.925628','end_longitude':'-84.342856'}
 	
 	cities = []
-	cities.append(alpharetta)
 	cities.append(dunwoody)
-	cities.append(buckhead)
 	info = ''
-	names = ["Alpharetta","Dunwoody","Buckhead"]
+	names = ["Dunwoody"]
 
 	for i in cities:
 		payload = cities[cities.index(i)]
