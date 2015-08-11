@@ -9,7 +9,7 @@ def index(request):
 	westmidtown = {'start_latitude':'33.781534','start_longitude':'-84.402375','end_latitude':'33.781534','end_longitude':'-84.402375'}
 	
 	cities = []
-	cities.append(west d)
+	cities.append(westmidtown)
 	info = ''
 	names = ["westmidtown"]
 
